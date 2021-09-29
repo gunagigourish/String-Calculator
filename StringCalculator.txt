@@ -24,9 +24,7 @@ public class StringCalculator
             if (numbers.Any(x => x == '-'))
             {
                 StringBuilder stringBuilder= new StringBuilder();
-                for (int i = 0;
-                     i < numbers.Count;
-                     i++)
+                for (int i = 0;i < numbers.Count;i++)
                 {
                     if (numbers[i] == '-')
                     {
@@ -35,7 +33,6 @@ public class StringCalculator
                         stringBuilder.Append(", ");
                     }    
                 }
-
                 throw new Exception(string.Format("negatives {0} not allowed",stringBuilder.ToString()));
             }
 
